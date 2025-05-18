@@ -1,37 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Projects</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Sagar Adak</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <div id="particles-js"></div>
+  
+  <header class="glass">
     <nav>
-      <h1>MyPortfolio</h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <div class="logo">
+        <span class="code-symbol">{</span>
+        <h1>SagarAdak</h1>
+        <span class="code-symbol">}</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html"><i class="fas fa-home"></i> <span>Home</span></a></li>
+        <li><a href="about.html"><i class="fas fa-user"></i> <span>About</span></a></li>
+        <li><a href="projects.html" class="active"><i class="fas fa-code"></i> <span>Projects</span></a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
       </ul>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
     </nav>
   </header>
 
-  <section class="projects">
-    <h2>My Projects</h2>
-    <div class="project-list">
-      <div class="project-card">
-        <h3>Project 1</h3>
-        <p>A to-do app with JavaScript and local storage.</p>
+  <main>
+    <section class="projects-section">
+      <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+      <p class="section-subtitle">Here are some of my recent works. Click on any project to learn more.</p>
+      
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="app">Applications</button>
+        <button class="filter-btn" data-filter="python">Python</button>
       </div>
-      <div class="project-card">
-        <h3>Project 2</h3>
-        <p>Weather App using OpenWeatherMap API.</p>
+      
+      <div class="projects-grid">
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="assets/images/project1.jpg" alt="E-commerce Website">
+            <div class="project-links">
+              <a href="#" class="link-btn"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="link-btn"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>E-commerce Platform</h3>
+            <p>Full-featured online store with React, Node.js, and MongoDB</p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="python">
+          <div class="project-image">
+            <img src="assets/images/project2.jpg" alt="Data Analysis Tool">
+            <div class="project-links">
+              <a href="#" class="link-btn"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="link-btn"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Data Analysis Dashboard</h3>
+            <p>Python tool for visualizing and analyzing complex datasets</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>Matplotlib</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="app">
+          <div class="project-image">
+            <img src="assets/images/project3.jpg" alt="Task Manager">
+            <div class="project-links">
+              <a href="#" class="link-btn"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="link-btn"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Productivity App</h3>
+            <p>Task manager with Pomodoro timer and habit tracker</p>
+            <div class="project-tech">
+              <span>JavaScript</span>
+              <span>Electron</span>
+              <span>Local Storage</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="assets/images/project4.jpg" alt="Weather App">
+            <div class="project-links">
+              <a href="#" class="link-btn"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="link-btn"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Weather Dashboard</h3>
+            <p>Real-time weather information with forecast</p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>API</span>
+              <span>Chart.js</span>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+    
+    <section class="github-stats">
+      <h2 class="section-title">My <span class="highlight">GitHub</span> Activity</h2>
+      <div class="stats-container">
+        <div class="stat-card">
+          <i class="fas fa-code-branch"></i>
+          <h3>50+</h3>
+          <p>Repositories</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-star"></i>
+          <h3>120+</h3>
+          <p>Stars</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-code"></i>
+          <h3>15,000+</h3>
+          <p>Lines of Code</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-calendar-alt"></i>
+          <h3>365+</h3>
+          <p>Days Active</p>
+        </div>
+      </div>
+      <a href="#" class="btn primary" target="_blank"><i class="fab fa-github"></i> View My GitHub</a>
+    </section>
+  </main>
 
+  <footer class="glass">
+    <div class="social-links">
+      <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>© 2023 Sagar Adak. All rights reserved.</p>
+  </footer>
+
+  <script src="js/particles.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,30 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home | My Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagar Adak | Full Stack Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <nav>
-      <h1>MyPortfolio</h1>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <div id="particles-js"></div>
 
-  <section class="hero">
-    <h2>Hello, I'm <span class="highlight">Sagar Adak</span></h2>
-    <p>A Passionate Full Stack Developer</p>
-    <a href="projects.html" class="btn">View Projects</a>
-  </section>
+    <header class="glass">
+        <nav>
+            <div class="logo">
+                <span class="code-symbol">{</span>
+                <h1>SagarAdak</h1>
+                <span class="code-symbol">}</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> <span>Home</span></a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> <span>About</span></a></li>
+                <li><a href="projects.html"><i class="fas fa-code"></i> <span>Projects</span></a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
 
-  <script src="js/script.js"></script>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="typing-container">
+                    <h2 class="greeting">Hello World!<span class="cursor">|</span></h2>
+                    <h1>I'm <span class="highlight">Sagar Adak</span></h1>
+                    <p class="dynamic-text"
+                        data-text='["Full Stack Developer", "BCA Student", "Tech Enthusiast", "Problem Solver"]'></p>
+                </div>
+                <div class="cta-buttons">
+                    <a href="projects.html" class="btn primary"><i class="fas fa-laptop-code"></i> View Projects</a>
+                    <a href="contact.html" class="btn secondary"><i class="fas fa-paper-plane"></i> Hire Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-window">
+                    <div class="window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre><code class="language-javascript">
+// My Developer Profile
+const sagarAdak = {
+  skills: ['JavaScript', 'Python', 'Java', 'React'],
+  education: 'BCA @ Brainware University',
+  semester: '4th',
+  passion: 'Building innovative solutions',
+  availability: 'Open for opportunities'
+};</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-stack">
+            <h2 class="section-title"><span class="highlight">Tech</span> Stack</h2>
+            <div class="tech-icons">
+                <i class="fab fa-html5" title="HTML5"></i>
+                <i class="fab fa-css3-alt" title="CSS3"></i>
+                <i class="fab fa-js" title="JavaScript"></i>
+                <i class="fab fa-python" title="Python"></i>
+                <i class="fab fa-java" title="Java"></i>
+                <i class="fab fa-react" title="React"></i>
+                <i class="fab fa-node-js" title="Node.js"></i>
+                <i class="fas fa-database" title="MongoDB"></i>
+                <i class="fab fa-php" title="PHP"></i>
+                <i class="fab fa-git-alt" title="Git"></i>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass">
+        <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>© 2023 Sagar Adak. All rights reserved.</p>
+    </footer>
+
+    <script src="js/particles.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
